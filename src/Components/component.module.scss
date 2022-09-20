@@ -1,3 +1,77 @@
-.title {
+@import '../sass/color.scss';
+@import '../sass/font.scss';
+@import '../sass/mediaquery.scss';
+
+h2 {
     color: black;
+    border-bottom: 2px solid $vivid-tangerine;
+    padding-bottom: 15px;
+    font-family: $Lobster;
+}
+
+footer {
+    background-color: $peach-orange;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    bottom: 0px;
+}
+
+
+
+
+
+.biodataContainer {
+    overflow: hidden;
+    width: 500px;
+    padding: 0 5px;
+}
+
+.biodataimg {
+    width: 150px;
+    border-radius: 100px;
+    float: left;
+}
+
+.contentTitle {
+    margin: 15px 0;
+    text-align: justify;
+    position: relative;
+    left: 45px;
+}
+
+.content {
+    font-size: 12px;
+    text-align: justify;
+    position: relative;
+    left: 45px;
+}
+
+.workimageContainer {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.workimage {
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+
+
+.footContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.iconContainer {
+    color: black;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 25px;
 }

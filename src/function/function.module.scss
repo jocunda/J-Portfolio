@@ -1,0 +1,35 @@
+@import '../sass/color.scss';
+@import '../sass/font.scss';
+@import '../sass/mediaquery.scss';
+
+.homeimage {
+    max-width: 100%;
+
+}
+
+.slideContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    width: 100%;
+}
+
+.slide {
+    display: inline-block;
+    color: transparent;
+}
+
+.slide,
+button {
+    width: 3vw;
+    height: 3px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: $floralwhite03;
+}
+
+.active {
+    width: 4vw;
+    background-color: $floralwhite;
+}
