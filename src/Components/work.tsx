@@ -5,6 +5,8 @@ import styles from './component.module.scss'
 import WORKIMAGES from '../data/image'
 
 
+import { IoMdArrowDropleftCircle, IoMdArrowDroprightCircle } from 'react-icons/io'
+
 export default function Work() {
     return <>
         <h2>My Works</h2>
@@ -15,5 +17,7 @@ export default function Work() {
                 </div>
             )}
         </div>
+        <IoMdArrowDropleftCircle />
+        <IoMdArrowDroprightCircle />
     </>
 }
