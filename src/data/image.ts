@@ -1,11 +1,5 @@
 
-type Image = {
-    image: string
-    text: string
-    link: string
-}
-
-const WORKIMAGES: Image[] = [
+const WORKIMAGES: WorkImage[] = [
     {
         image: "https://picsum.photos/id/1043/800/600",
         text: "My Portfolio",

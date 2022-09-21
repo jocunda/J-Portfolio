@@ -10,11 +10,11 @@ import styles from './component.module.scss'
 export default function Contact() {
     return <>
         <div className={styles.footContainer}>
-            <p>Contact</p>
+            <p>Contact Me</p>
             <div className={styles.iconContainer}>
-                <ImLinkedin2 />
-                <AiFillGithub />
-                <FiMail />
+                <a href="https://linkedin.com/in/silviajocunda" target="_blank"><ImLinkedin2 /></a>
+                <a href="https://github.com/jocunda" target="_blank"><AiFillGithub /></a>
+                <a href="mailto:silviawanshan88@gmail.com" target="_blank" title="silviawanshan88@gmail.com"><FiMail /></a>
             </div>
         </div>
 

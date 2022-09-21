@@ -3,15 +3,29 @@
 @import '../sass/mediaquery.scss';
 
 .homeimage {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
 
+.homeimageContainer {
+    display: none;
+    transition-duration: 1s ease-in;
+    background-color: transparent;
+
+    &.activeimage {
+        display: block;
+        transition-duration: 1s;
+    }
 }
 
 .slideContainer {
     display: flex;
     justify-content: center;
     gap: 2vw;
-    width: 100%;
+    max-width: 100%;
+    position: relative;
+    bottom: 35px;
+    margin-top: 0;
 }
 
 .slide {

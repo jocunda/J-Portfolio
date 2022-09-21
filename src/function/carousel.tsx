@@ -1,31 +1,42 @@
-//JSON
-import WORKIMAGES from '../data/image'
 
 //assets
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 //styles
-import styles from './function.module.scss'
+import styles from './function.module.scss';
 
+import cx from 'classnames'
 
-export default function Carousel() {
-    const [image, setImage] = useState<number>(0);
+type CarouselType = {
+    images: HomeImage[]
+    autoPlayTime: number
+}
 
+export default function Carousel({ images, autoPlayTime }: CarouselType) {
+    const [imagekey, setImagekey] = useState<number>(0);
 
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setImagekey(imagekey === images.length - 1 ? 0 : imagekey + 1);
+    //     }, autoPlayTime);
+
+    //     return () => clearTimeout(timer);
+    // }, [imagekey]);
 
     return <>
-        <div className={styles.homeimageContainer}>
-            {WORKIMAGES.map(({ image, text }, index) =>
-                <div key={index} >
-                    <img src={image} alt={text} className={styles.homeimage} />
+        <div>
+            {images.map(({ image, key }, index) =>
+                <div key={index} className={imagekey === key ? cx(styles.homeimageContainer, styles.activeimage) : styles.homeimageContainer}>
+                    <img src={image} className={styles.homeimage} />
                 </div>
             )}
         </div>
         <ul className={styles.slideContainer}>
-            <li className={styles.slide}><button className={image === 1 ? styles.active : ""} onClick={() => setImage(1)}>1</button></li>
-            <li className={styles.slide}><button className={image === 2 ? styles.active : ""} onClick={() => setImage(2)}>2</button></li>
-            <li className={styles.slide}><button className={image === 3 ? styles.active : ""} onClick={() => setImage(3)}>3</button></li>
-            <li className={styles.slide}><button className={image === 4 ? styles.active : ""} onClick={() => setImage(4)}>4</button></li>
+            {images.map(({ key }, index) =>
+                <>
+                    <li className={styles.slide} key={index}><button className={imagekey === key ? styles.active : ""} onClick={() => setImagekey(key)}>{key}</button></li>
+                </>
+            )}
         </ul>
     </>
 }
