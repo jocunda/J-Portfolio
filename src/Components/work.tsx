@@ -23,27 +23,30 @@ export default function Work() {
         setWork(work === 0 ? WORKIMAGES.length - 1 : work - 1)
     };
 
-    // function slickimage(key: number) {
-    //     if (key === work) {
-    //         return cx(styles.workimage, styles.imageactive)
-    //     } else if (key === work - 1) {
-    //         return cx(styles.workimage, styles.clippedleft)
-    //     } else if (key === work + 1) {
-    //         return cx(styles.workimage, styles.clippedright)
-    //     }
-    //     else return styles.imagenonactive
-    // }
+    function slickimage(key: number) {
+        if (key === work) {
+            return cx(styles.workimage, styles.imageactive)
+        } else if (key === work - 1) {
+            return cx(styles.workimage, styles.clippedleft)
+        } else if (key === work + 1) {
+            return cx(styles.workimage, styles.clippedright)
+        }
+        else return styles.workimage
+    }
 
 
     return <>
         <h2>My Works</h2>
-        <div className={styles.workimageContainer}>
-            {WORKIMAGES.map(({ key, image, text }, index) =>
-                <div key={index} >
-                    <img src={image} alt={text} className={styles.workimage} />
-                </div>
-            )}
+        <div className={styles.workimageSlick}>
+            <div className={styles.workimageContainer}>
+                {WORKIMAGES.map(({ key, image, text }, index) =>
+                    <div key={index} className={styles.workimagediv}>
+                        <img src={image} alt={text} className={slickimage(key)} />
+                    </div>
+                )}
+            </div>
         </div>
+
         <div className={styles.arrowleftright}>
             <a onClick={prevSlide}><IoMdArrowDropleftCircle /></a>
             <a onClick={nextSlide}><IoMdArrowDroprightCircle /></a>
