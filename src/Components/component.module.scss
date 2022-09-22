@@ -14,7 +14,7 @@ footer {
     width: 100%;
     height: 10%;
     position: relative;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .navbar {
@@ -98,15 +98,49 @@ footer {
 
 .workimageContainer {
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 15px;
+    width: 90%;
+
 }
 
 .workimage {
     width: 250px;
     border-radius: 10px;
 }
+
+.clippedleft {
+    clip-path: inset(0 0 0 35%);
+}
+
+.clippedright {
+    clip-path: inset(0 35% 0 0);
+}
+
+.imageactive {
+    width: 300px;
+}
+
+.imagenonactive {
+    display: none;
+}
+
+.arrowleftright {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0 50px 0;
+
+    & a {
+        font-size: 30px;
+        color: $blackolive;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
 
 
 
@@ -117,6 +151,7 @@ footer {
     padding: 0 50px;
     height: 8vh;
     align-items: center;
+    margin: 0;
 
     & p {
         font-family: $Lobster;
