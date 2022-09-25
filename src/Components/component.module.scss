@@ -96,26 +96,31 @@ footer {
     left: 45px;
 }
 
+
+
 .workimageSlick {
     overflow: hidden;
     padding: 0px 60px;
     width: 80%;
 
     & .workimageContainer {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 250px);
+        grid-auto-flow: column;
+        gap: 15px;
         justify-content: center;
         align-items: center;
         float: left;
-        touch-action: pan-y;
-        transform: translate3d(-666px, 0px, 0px);
+        clear: both;
     }
-}
 
+}
 
 .workimagediv {
     display: inline-block;
     margin: 10px;
 }
+
 
 .workimage {
     width: 250px;
@@ -128,10 +133,6 @@ footer {
     transform: scale(1.08);
     opacity: 1;
 }
-
-// .imagenonactive {
-//     display: none;
-// }
 
 .arrowleftright {
     display: flex;
