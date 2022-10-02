@@ -3,25 +3,25 @@ const WORKIMAGES: WorkImage[] = [
     {
         key: 0,
         image: "https://picsum.photos/id/1043/800/600",
-        text: "My Portfolio",
+        text: "Calculator",
         link: "",
     },
     {
         key: 1,
         image: "https://picsum.photos/id/1044/800/600",
-        text: "My Portfolio",
+        text: "To Do",
         link: "",
     },
     {
         key: 2,
         image: "https://picsum.photos/id/1045/800/600",
-        text: "My Portfolio",
+        text: "Weather",
         link: "",
     },
     {
         key: 3,
         image: "https://picsum.photos/id/1049/800/600",
-        text: "My Portfolio",
+        text: "Grid Component",
         link: "",
     },
     {

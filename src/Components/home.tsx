@@ -12,6 +12,7 @@ import woman from '../assets/image/womanpic.jpg'
 import Carousel from "../function/carousel";
 //data
 import HOMEIMAGES from "../data/homeimage";
+import Feature from "./feature";
 
 
 export default function Home() {
@@ -28,6 +29,8 @@ export default function Home() {
             <h1>Design solution Make Easy</h1>
             <p>Aliquip elit enim voluptate sit mollit ad officia veniam minim dolore. Commodo eu ad excepteur aliquip nostrud non fugiat. Minim Lorem nulla proident id. Ut veniam do sunt eiusmod duis esse in.</p>
         </div>
+
+        <Feature />
 
 
         <div className={styles.biodataContainer} id="work">
