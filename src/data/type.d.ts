@@ -10,3 +10,8 @@ type HomeImage = {
     key: number
     image: string
 }
+
+type FeatureBox = {
+    styl: string
+    text: string
+}
