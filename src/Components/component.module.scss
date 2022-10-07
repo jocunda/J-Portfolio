@@ -167,6 +167,7 @@ footer {
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.6);
@@ -176,12 +177,46 @@ footer {
     visibility: visible;
     opacity: 1;
     transform: scale(1);
+
+    & h1 {
+        color: $antiquewhite;
+        text-align: justify;
+        font-size: 25px;
+        font-family: $comforta;
+
+        & .linkExternal {
+            font-size: 25px;
+            color: rgb(14, 181, 247);
+            text-decoration: none;
+
+            &:hover {
+                color: rgb(218, 177, 226)
+            }
+        }
+
+    }
+
+    & p {
+
+        color: $antiquewhite;
+        text-align: justify;
+        font-size: 18px;
+    }
 }
 
 .nonpreview {
     visibility: hidden;
     opacity: 0;
     transform: scale(0);
+}
+
+.previewText {
+
+
+    & h3 {
+        text-align: justify;
+        color: $antiquewhite;
+    }
 }
 
 .previewClose {

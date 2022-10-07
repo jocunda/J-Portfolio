@@ -39,6 +39,8 @@ export default function Work() {
 
     return <>
         <h2>My Works</h2>
+
+        {/* imageslide */}
         <div className={styles.workimageSlick}>
             <div className={styles.workimageContainer} style={{ transform: `translate3d(calc(${container}% + 2vmin), 0px, 0px)` }}>
                 {WORKIMAGES.map(({ key, image, text }, index) =>
@@ -49,15 +51,26 @@ export default function Work() {
             </div>
         </div>
 
+        {/* controller */}
         <div className={styles.arrowleftright}>
             <a onClick={prevSlide}><IoMdArrowDropleftCircle /></a>
             <a onClick={nextSlide}><IoMdArrowDroprightCircle /></a>
         </div>
 
+        {/* preview */}
         <div className={preview ? styles.preview : styles.nonpreview}>
             <img src="" alt="" />
-            <p>Text</p>
-            <a href="" target="_blank" rel="noreferrer" className={styles.linkExternal}><BiLinkExternal /></a>
+            <h1>Login Page <a href="" target="_blank" rel="noreferrer" className={styles.linkExternal}><BiLinkExternal /></a></h1>
+
+            <div className={styles.previewText}>
+                <h3>Library</h3>
+                <p>react three</p>
+                <h3>Framework</h3>
+                <p>React 17.0.2 CRA</p>
+                <h3>Description</h3>
+                <p>3D Globe using Three js</p>
+            </div>
+
             <VscChromeClose className={styles.previewClose} onClick={() => setPreview(false)} />
         </div>
     </>
