@@ -3,6 +3,7 @@ import styles from './component.module.scss'
 
 //JSON
 import WORKIMAGES from '../data/image'
+import back1 from '../assets/backgroundImage/back1.jpg'
 
 //react-icon
 import { IoMdArrowDropleftCircle, IoMdArrowDroprightCircle } from 'react-icons/io'
@@ -19,6 +20,11 @@ export default function Work() {
     const [work, setWork] = useState<number>(initialState);
     const [container, setContainer] = useState<number>(containerState);
     const [preview, setPreview] = useState<boolean>(false);
+    const [preimage, setPreimage] = useState<string>();
+    const [title, setTitle] = useState<string>();
+    const [text, setText] = useState<string>();
+    const [framework, setFramework] = useState<string>();
+    const [prelink, setprelink] = useState<string>();
 
 
     //image controller
@@ -32,8 +38,13 @@ export default function Work() {
     };
 
     //image preview
-    function getpreview() {
+    function getpreview({ image, title, text, framework, link }: WorkImage) {
         setPreview(true)
+        setPreimage(image)
+        setTitle(title)
+        setText(text)
+        setFramework(framework)
+        setprelink(link)
     }
 
 
@@ -43,8 +54,8 @@ export default function Work() {
         {/* imageslide */}
         <div className={styles.workimageSlick}>
             <div className={styles.workimageContainer} style={{ transform: `translate3d(calc(${container}% + 2vmin), 0px, 0px)` }}>
-                {WORKIMAGES.map(({ key, image, text }, index) =>
-                    <div key={index} className={styles.workimagediv} onClick={getpreview}>
+                {WORKIMAGES.map(({ key, image, title, text, framework, link }, index) =>
+                    <div key={index} className={styles.workimagediv} onClick={() => getpreview({ image, title, text, framework, link })}>
                         <img src={image} alt={text} className={key === work ? cx(styles.workimage, styles.imageactive) : styles.workimage} />
                     </div>
                 )}
@@ -58,20 +69,20 @@ export default function Work() {
         </div>
 
         {/* preview */}
+
         <div className={preview ? styles.preview : styles.nonpreview}>
-            <img src="" alt="" />
-            <h1>Login Page <a href="" target="_blank" rel="noreferrer" className={styles.linkExternal}><BiLinkExternal /></a></h1>
+            <img src={preimage} className={styles.previewjpg} />
+            <h1>{title}<a href={prelink} target="_blank" rel="noreferrer" className={styles.linkExternal}><BiLinkExternal /></a></h1>
 
             <div className={styles.previewText}>
-                <h3>Library</h3>
-                <p>react three</p>
+                <h3>Project Brief</h3>
+                <p>{text}</p>
                 <h3>Framework</h3>
-                <p>React 17.0.2 CRA</p>
-                <h3>Description</h3>
-                <p>3D Globe using Three js</p>
+                <p>{framework}</p>
             </div>
 
             <VscChromeClose className={styles.previewClose} onClick={() => setPreview(false)} />
         </div>
+
     </>
 }

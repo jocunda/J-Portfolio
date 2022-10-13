@@ -1,9 +1,10 @@
 type WorkImage = {
-    key: number
+    key?: number
     image: string
+    title: string
     text: string
+    framework: string
     link: string
-
 }
 
 type HomeImage = {
