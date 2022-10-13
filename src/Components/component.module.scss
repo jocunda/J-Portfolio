@@ -9,6 +9,7 @@ h2 {
     border-bottom: 2px solid $vivid-tangerine;
     padding-bottom: 15px;
     font-family: $Lobster;
+    margin-top: 50px;
 }
 
 footer {
@@ -82,8 +83,6 @@ footer {
 
     @include respond(small) {
         width: 250px;
-        display: flex;
-        flex-wrap: wrap;
     }
 }
 
@@ -91,6 +90,7 @@ footer {
     width: 150px;
     border-radius: 100px;
     float: left;
+    margin: 0 25px;
 
     @include respond(small) {
         float: none;
@@ -101,20 +101,31 @@ footer {
     font-size: 18px;
     margin: 15px 0;
     text-align: justify;
-    color: $blackchoco;
+    color: $yelloworange;
     font-family: $comforta;
+    text-shadow: 2px 1px 1px $charcoal;
+
+
+    @include respond(small) {
+        text-align: center;
+    }
 }
 
 .content {
     font-size: 14px;
     text-align: justify;
     color: $blackvampire;
+
+    @include respond(small) {
+        text-align: center;
+    }
 }
 
 
 
 .workimageSlick {
     overflow: hidden;
+    margin-top: 15px;
     padding: 0px 60px;
     width: 80%;
 
@@ -296,6 +307,7 @@ footer {
         "first fifth  fifth sixth ";
     margin-bottom: 35px;
 
+
     & .boxgrid {
         display: flex;
         color: $blackchoco;
@@ -316,7 +328,7 @@ footer {
     }
 
     @include respond(small) {
-        width: 250px;
+        width: 175px;
         display: flex;
         flex-wrap: wrap;
     }
