@@ -79,28 +79,35 @@ footer {
     overflow: hidden;
     width: 500px;
     padding: 0 5px;
+
+    @include respond(small) {
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .biodataimg {
     width: 150px;
     border-radius: 100px;
     float: left;
+
+    @include respond(small) {
+        float: none;
+    }
 }
 
 .contentTitle {
     font-size: 18px;
     margin: 15px 0;
     text-align: justify;
-    position: relative;
-    left: 45px;
     color: $blackchoco;
+    font-family: $comforta;
 }
 
 .content {
     font-size: 14px;
     text-align: justify;
-    position: relative;
-    left: 45px;
     color: $blackvampire;
 }
 
@@ -283,7 +290,7 @@ footer {
     display: grid;
     gap: 15px;
     grid-template-columns: 175px 80px 80px 175px;
-    grid-template-rows: 80px 80px;
+    grid-template-rows: repeat(2, 80px);
     grid-template-areas:
         "first second third fourth "
         "first fifth  fifth sixth ";
@@ -301,6 +308,17 @@ footer {
             padding-right: 15px;
         }
 
+    }
+
+    @include respond(medium) {
+        grid-template-columns: 175px 80px 80px;
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    @include respond(small) {
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -343,6 +361,10 @@ footer {
     grid-area: "fourth";
     background-image: url('../assets/backgroundImage/back4.jpg');
     background-size: cover;
+
+    @include respond(medium) {
+        grid-column: 2;
+    }
 }
 
 .fifthbox {
@@ -354,6 +376,10 @@ footer {
     grid-column: 2;
     background-image: url('../assets/backgroundImage/back5.jpg');
     background-size: cover;
+
+    @include respond(medium) {
+        grid-column: 1;
+    }
 }
 
 .sixthbox {
@@ -365,4 +391,8 @@ footer {
     grid-column: 4;
     background-image: url('../assets/backgroundImage/back6.jpg');
     background-size: cover;
+
+    @include respond(medium) {
+        grid-column: 2;
+    }
 }
