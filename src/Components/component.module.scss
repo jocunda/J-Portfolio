@@ -127,7 +127,15 @@ footer {
     overflow: hidden;
     margin-top: 15px;
     padding: 0px 60px;
-    width: 80%;
+    width: 850px;
+
+    @include respond(medium) {
+        width: 480px;
+    }
+
+    @include respond(small) {
+        width: 210px;
+    }
 
     & .workimageContainer {
         display: grid;
@@ -138,6 +146,15 @@ footer {
         align-items: center;
         float: left;
         clear: both;
+        transform: translate3d(-590px, 0px, 0px);
+
+        @include respond(medium) {
+            transform: translate3d(-510px, 0px, 0px);
+        }
+
+        @include respond(small) {
+            transform: translate3d(-650px, 0px, 0px);
+        }
     }
 
 }
