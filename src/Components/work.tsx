@@ -81,7 +81,7 @@ export default function Work() {
 
 
         {/* preview */}
-        <div className={preview ? styles.preview : styles.nonpreview}>
+        <div className={preview ? styles.preview : cx(styles.preview, styles.nonpreview)}>
             <img src={preimage} className={styles.previewjpg} />
             <h1>{title}<a href={prelink} target="_blank" rel="noreferrer" className={styles.linkExternal}><BiLinkExternal /></a></h1>
 
