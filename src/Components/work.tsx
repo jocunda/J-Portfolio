@@ -14,10 +14,9 @@ import cx from 'classnames';
 
 
 export default function Work() {
-    // const initialState = Math.floor(WORKIMAGES.length / 2);
-    // const containerState = -45
     const [work, setWork] = useState<number>(2);
-    // const [container, setContainer] = useState<number>(containerState);
+
+    //image preview state
     const [preview, setPreview] = useState<boolean>(false);
     const [preimage, setPreimage] = useState<string>();
     const [title, setTitle] = useState<string>();
@@ -34,9 +33,9 @@ export default function Work() {
         const newImages = moveItem ? images.concat(moveItem) : images;
         setImages(newImages);
 
-        setWork(work === WORKIMAGES.length - 1 ? 0 : work + 1)
-        // setContainer(work === WORKIMAGES.length - 1 ? containerState : container - 7)
+        setWork(work === WORKIMAGES.length ? 0 : work + 1)
     };
+
     function prevSlide() {
         const moveItem = images.pop();
         // move item to first array
@@ -45,8 +44,7 @@ export default function Work() {
         const newImages = newArray.concat(images);
         setImages(newImages);
 
-        setWork(work === 0 ? WORKIMAGES.length - 1 : work - 1)
-        // setContainer(work === 0 ? WORKIMAGES.length - containerState : container + 7)
+        setWork(work === 0 ? WORKIMAGES.length : work - 1)
     };
 
     //image preview
@@ -63,17 +61,17 @@ export default function Work() {
     return <>
         <h2>My Works</h2>
 
-        {/* style={{ transform: `translate3d(calc(${container}% + 2vmin), 0px, 0px)` }} */}
         {/* imageslide */}
         <div className={styles.workimageSlick}>
             <div className={styles.workimageContainer} >
                 {images.map(({ key, image, title, text, framework, link }) =>
                     <div key={key} className={styles.workimagediv} onClick={() => getpreview({ image, title, text, framework, link })}>
-                        <img src={image} alt={text} className={styles.workimage} />
+                        <img src={image} alt={text} className={key === work ? cx(styles.imageactive, styles.workimage) : styles.workimage} />
                     </div>
                 )}
             </div>
         </div>
+
 
         {/* controller */}
         <div className={styles.arrowleftright}>
@@ -81,8 +79,8 @@ export default function Work() {
             <a onClick={nextSlide}><IoMdArrowDroprightCircle /></a>
         </div>
 
-        {/* preview */}
 
+        {/* preview */}
         <div className={preview ? styles.preview : styles.nonpreview}>
             <img src={preimage} className={styles.previewjpg} />
             <h1>{title}<a href={prelink} target="_blank" rel="noreferrer" className={styles.linkExternal}><BiLinkExternal /></a></h1>

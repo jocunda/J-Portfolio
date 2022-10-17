@@ -34,14 +34,23 @@ footer {
     border-radius: 20px 0 0 20px;
     font-family: $comforta;
 
+
+
     & a {
         font-size: 20px;
         text-decoration: none;
         color: $antiquewhite;
 
+
+        @include respond(small) {
+            font-size: 18px;
+            font-weight: 700;
+            text-shadow: 2px 1px 1px $charcoal;
+        }
+
         &:hover {
             color: white;
-            font-weight: 700;
+
         }
     }
 }
@@ -129,6 +138,7 @@ footer {
     padding: 0px 60px;
     width: 850px;
 
+
     @include respond(medium) {
         width: 480px;
     }
@@ -146,7 +156,8 @@ footer {
         align-items: center;
         float: left;
         clear: both;
-        transform: translate3d(-590px, 0px, 0px);
+        transform: translate3d(-330px, 0px, 0px);
+        transition: all ease 0.5s;
 
         @include respond(medium) {
             transform: translate3d(-510px, 0px, 0px);
