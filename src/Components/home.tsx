@@ -38,7 +38,7 @@ export default function Home() {
         {/* biodata */}
         <div className={styles.biodataContainer} id="work">
             <img src={woman} className={styles.biodataimg} />
-            <h5 className={styles.contentTitle}>I am Amy and I love to work on your next project</h5>
+            <h5 className={styles.contentTitle}>Hi, I am Silvia</h5>
             <p className={styles.content}>Non amet aliquip sint ullamco anim proident anim. Cillum laboris deserunt proident esse. Anim sit officia cupidatat duis. </p>
         </div>
 

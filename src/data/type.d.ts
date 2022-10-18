@@ -1,6 +1,7 @@
 type WorkImage = {
     key?: number
     image: string
+    image1?: string
     title: string
     text: string
     framework: string

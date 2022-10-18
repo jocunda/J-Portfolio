@@ -19,6 +19,7 @@ export default function Work() {
     //image preview state
     const [preview, setPreview] = useState<boolean>(false);
     const [preimage, setPreimage] = useState<string>();
+    const [preimage1, setPreimage1] = useState<string>();
     const [title, setTitle] = useState<string>();
     const [text, setText] = useState<string>();
     const [framework, setFramework] = useState<string>();
@@ -48,9 +49,10 @@ export default function Work() {
     };
 
     //image preview
-    function getpreview({ image, title, text, framework, link }: WorkImage) {
+    function getpreview({ image, image1, title, text, framework, link }: WorkImage) {
         setPreview(true)
         setPreimage(image)
+        setPreimage1(image1)
         setTitle(title)
         setText(text)
         setFramework(framework)
@@ -64,8 +66,8 @@ export default function Work() {
         {/* imageslide */}
         <div className={styles.workimageSlick}>
             <div className={styles.workimageContainer} >
-                {images.map(({ key, image, title, text, framework, link }) =>
-                    <div key={key} className={styles.workimagediv} onClick={() => getpreview({ image, title, text, framework, link })}>
+                {images.map(({ key, image, image1, title, text, framework, link }) =>
+                    <div key={key} className={styles.workimagediv} onClick={() => getpreview({ image, image1, title, text, framework, link })}>
                         <img src={image} alt={text} className={key === work ? cx(styles.imageactive, styles.workimage) : styles.workimage} />
                     </div>
                 )}
@@ -82,7 +84,11 @@ export default function Work() {
 
         {/* preview */}
         <div className={preview ? styles.preview : cx(styles.preview, styles.nonpreview)}>
-            <img src={preimage} className={styles.previewjpg} />
+            <div className={styles.previewjpgContainer} >
+                <img src={preimage} className={styles.previewjpg} />
+                <img src={preimage1} className={preimage1 === "" ? cx(styles.previewjpg, styles.nonpreviewjpg) : styles.previewjpg} />
+            </div>
+
             <h1>{title}<a href={prelink} target="_blank" rel="noreferrer" className={styles.linkExternal}><BiLinkExternal /></a></h1>
 
             <div className={styles.previewText}>
