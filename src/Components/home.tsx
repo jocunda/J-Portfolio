@@ -29,7 +29,7 @@ export default function Home() {
         <div className={styles.homeheaderContainer} id="home">
             <Carousel images={HOMEIMAGES} autoPlayTime={3000} />
             <h1>Design solution Make Easy</h1>
-            <p>Aliquip elit enim voluptate sit mollit ad officia veniam minim dolore. Commodo eu ad excepteur aliquip nostrud non fugiat. Minim Lorem nulla proident id. Ut veniam do sunt eiusmod duis esse in.</p>
+            <p>Ipsum dolor exercitation sit mollit sit consequat Lorem pariatur enim consectetur irure. Aute anim sit ad adipisicing amet aute. Dolor ex dolore duis duis labore Lorem ad pariatur anim voluptate laborum. Aliquip velit proident consequat commodo eu dolore consectetur ad excepteur do enim. Nulla ipsum eu fugiat adipisicing ea qui laborum do aute velit eu cillum nostrud adipisicing.</p>
         </div>
 
         {/* gridbox feature */}
@@ -39,7 +39,8 @@ export default function Home() {
         <div className={styles.biodataContainer} id="work">
             <img src={woman} className={styles.biodataimg} />
             <h5 className={styles.contentTitle}>Hi, I am Silvia</h5>
-            <p className={styles.content}>Non amet aliquip sint ullamco anim proident anim. Cillum laboris deserunt proident esse. Anim sit officia cupidatat duis. </p>
+            <p className={styles.content}>Self-taught programming languages for HTML, CSS, Javascript and Typescript. I have a high interest in front-end web development and design.
+            </p>
         </div>
 
         {/* selected work */}

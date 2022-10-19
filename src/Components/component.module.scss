@@ -263,6 +263,10 @@ footer {
     flex-direction: row;
     gap: 5px;
 
+    @include respond(small) {
+        flex-direction: column;
+    }
+
     & .previewjpg {
         width: 350px;
         height: 250px;

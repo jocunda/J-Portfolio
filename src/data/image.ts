@@ -7,7 +7,7 @@ import earth from '../assets/workimage/earth.jpg'
 const WORKIMAGES: WorkImage[] = [
     {
         key: 0,
-        image: "https://picsum.photos/id/1043/800/600",
+        image: price,
         image1: "",
         title: "Calculator",
         text: "Bla bla bla bla bla",
@@ -16,7 +16,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 1,
-        image: "https://picsum.photos/id/1044/800/600",
+        image: price,
         image1: "",
         title: "To Do",
         text: "Bla bla bla bla bla",
@@ -25,7 +25,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 2,
-        image: "https://picsum.photos/id/1045/800/600",
+        image: price,
         image1: "",
         title: "Weather",
         text: "Bla bla bla bla bla",
@@ -52,7 +52,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 5,
-        image: "https://picsum.photos/id/1053/800/600",
+        image: price,
         image1: "",
         title: "Login",
         text: "Bla bla bla bla bla",
@@ -61,7 +61,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 6,
-        image: "https://picsum.photos/id/1054/800/600",
+        image: price,
         image1: "",
         title: "My Portfolio2",
         text: "Bla bla bla bla bla",
@@ -70,7 +70,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 7,
-        image: "https://picsum.photos/id/1055/800/600",
+        image: price,
         image1: "",
         title: "My Portfolio3",
         text: "Bla bla bla bla bla",
@@ -79,7 +79,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 8,
-        image: "https://picsum.photos/id/1056/800/600",
+        image: price,
         image1: "",
         title: "My Portfolio",
         text: "Bla bla bla bla bla",
@@ -88,7 +88,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 9,
-        image: "https://picsum.photos/id/1057/800/600",
+        image: price,
         image1: "",
         title: "My Portfolio",
         text: "Bla bla bla bla bla",
