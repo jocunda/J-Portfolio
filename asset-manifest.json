@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/J-Portfolio/static/css/main.a09d5857.css",
-    "main.js": "/J-Portfolio/static/js/main.e08535b9.js",
+    "main.js": "/J-Portfolio/static/js/main.614bef7e.js",
     "static/js/787.505bf0a2.chunk.js": "/J-Portfolio/static/js/787.505bf0a2.chunk.js",
     "static/media/womanpic.jpg": "/J-Portfolio/static/media/womanpic.408d2e11b629b0bb7758.jpg",
-    "static/media/TPE.png": "/J-Portfolio/static/media/TPE.a0143fe9c2af4488415d.png",
+    "static/media/SG.png": "/J-Portfolio/static/media/SG.818a1432674b108036a0.png",
+    "static/media/TPE.png": "/J-Portfolio/static/media/TPE.4f7550e04635ec3e4ea9.png",
     "static/media/back1.jpg": "/J-Portfolio/static/media/back1.bddd633ecd02432891c8.jpg",
     "static/media/back5.jpg": "/J-Portfolio/static/media/back5.c35b85ecaab69ee9fb5c.jpg",
     "static/media/back4.jpg": "/J-Portfolio/static/media/back4.ae961af7f5108eb17ec6.jpg",
@@ -15,13 +16,14 @@
     "static/media/calculator.jpg": "/J-Portfolio/static/media/calculator.b0d598b770c6bdef541b.jpg",
     "static/media/back2.jpg": "/J-Portfolio/static/media/back2.235e9d9dc60a145e91f0.jpg",
     "static/media/back6.jpg": "/J-Portfolio/static/media/back6.77149927670cdf6ce041.jpg",
+    "static/media/BLANK.png": "/J-Portfolio/static/media/BLANK.6a34ed1edbbf52e27c19.png",
     "index.html": "/J-Portfolio/index.html",
     "main.a09d5857.css.map": "/J-Portfolio/static/css/main.a09d5857.css.map",
-    "main.e08535b9.js.map": "/J-Portfolio/static/js/main.e08535b9.js.map",
+    "main.614bef7e.js.map": "/J-Portfolio/static/js/main.614bef7e.js.map",
     "787.505bf0a2.chunk.js.map": "/J-Portfolio/static/js/787.505bf0a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a09d5857.css",
-    "static/js/main.e08535b9.js"
+    "static/js/main.614bef7e.js"
   ]
 }
