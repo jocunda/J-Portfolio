@@ -1,13 +1,16 @@
 //import image
 import price from '../assets/workimage/pricegrid.jpg'
 import price1 from '../assets/workimage/pricegrid1.jpg'
-import login from '../assets/workimage/login.jpg'
+import calculator from '../assets/workimage/calculator.jpg'
 import earth from '../assets/workimage/earth.jpg'
+import blank from '../assets/backgroundImage/back4.jpg'
+import lemon1 from '../assets/workimage/lemon1.jpg'
+import lemon2 from '../assets/workimage/lemon2.jpg'
 
 const WORKIMAGES: WorkImage[] = [
     {
         key: 0,
-        image: price,
+        image: blank,
         image1: "",
         title: "Calculator",
         text: "Bla bla bla bla bla",
@@ -16,7 +19,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 1,
-        image: price,
+        image: blank,
         image1: "",
         title: "To Do",
         text: "Bla bla bla bla bla",
@@ -25,12 +28,12 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 2,
-        image: price,
-        image1: "",
-        title: "Weather",
-        text: "Bla bla bla bla bla",
-        framework: "React 17.0.2 CRA",
-        link: "",
+        image: lemon1,
+        image1: lemon2,
+        title: "Little Lemon",
+        text: "Project from course Front-End Developer by Meta, which requirement is to build website of homepage and reservation form for Little Lemon Restaurant.",
+        framework: "React 18.0.2 CRA",
+        link: "https://github.com/jocunda/littlelemonrestaurant",
     },
     {
         key: 3,
@@ -52,16 +55,16 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 5,
-        image: price,
+        image: blank,
         image1: "",
-        title: "Login",
+        title: "Calculator",
         text: "Bla bla bla bla bla",
-        framework: "React 17.0.2 CRA",
+        framework: "React 18.2.0 CRA",
         link: "https://jocunda.github.io/React-TS-Login/",
     },
     {
         key: 6,
-        image: price,
+        image: blank,
         image1: "",
         title: "My Portfolio2",
         text: "Bla bla bla bla bla",
@@ -70,7 +73,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 7,
-        image: price,
+        image: blank,
         image1: "",
         title: "My Portfolio3",
         text: "Bla bla bla bla bla",
@@ -79,7 +82,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 8,
-        image: price,
+        image: blank,
         image1: "",
         title: "My Portfolio",
         text: "Bla bla bla bla bla",
@@ -88,7 +91,7 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 9,
-        image: price,
+        image: blank,
         image1: "",
         title: "My Portfolio",
         text: "Bla bla bla bla bla",

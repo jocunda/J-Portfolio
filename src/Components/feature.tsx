@@ -16,7 +16,7 @@ export default function Feature() {
                 <p>3D</p>
             </div>
             <div className={cx(styles.boxgrid, styles.fourthbox)}>
-                <p>CRUD</p>
+                <p>Layout</p>
             </div>
             <div className={cx(styles.boxgrid, styles.fifthbox)}>
                 <p>Video</p>

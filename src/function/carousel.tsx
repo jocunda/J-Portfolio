@@ -15,13 +15,13 @@ type CarouselType = {
 export default function Carousel({ images, autoPlayTime }: CarouselType) {
     const [imagekey, setImagekey] = useState<number>(0);
 
-    // useEffect(() => {
-    //     const timer = setTimeout(() => {
-    //         setImagekey(imagekey === images.length - 1 ? 0 : imagekey + 1);
-    //     }, autoPlayTime);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setImagekey(imagekey === images.length - 1 ? 0 : imagekey + 1);
+        }, autoPlayTime);
 
-    //     return () => clearTimeout(timer);
-    // }, [imagekey]);
+        return () => clearTimeout(timer);
+    }, [imagekey]);
 
     return <>
         <div>

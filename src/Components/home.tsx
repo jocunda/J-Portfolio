@@ -28,8 +28,8 @@ export default function Home() {
         {/* carousel home image */}
         <div className={styles.homeheaderContainer} id="home">
             <Carousel images={HOMEIMAGES} autoPlayTime={3000} />
-            <h1>Design solution Make Easy</h1>
-            <p>Ipsum dolor exercitation sit mollit sit consequat Lorem pariatur enim consectetur irure. Aute anim sit ad adipisicing amet aute. Dolor ex dolore duis duis labore Lorem ad pariatur anim voluptate laborum. Aliquip velit proident consequat commodo eu dolore consectetur ad excepteur do enim. Nulla ipsum eu fugiat adipisicing ea qui laborum do aute velit eu cillum nostrud adipisicing.</p>
+            {/* <h1>Design solution Make Easy</h1>
+            <p>Ipsum dolor exercitation sit mollit sit consequat Lorem pariatur enim consectetur irure. Aute anim sit ad adipisicing amet aute. Dolor ex dolore duis duis labore Lorem ad pariatur anim voluptate laborum. Aliquip velit proident consequat commodo eu dolore consectetur ad excepteur do enim. Nulla ipsum eu fugiat adipisicing ea qui laborum do aute velit eu cillum nostrud adipisicing.</p> */}
         </div>
 
         {/* gridbox feature */}
