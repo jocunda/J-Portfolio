@@ -8,7 +8,7 @@ import styles from './component.module.scss'
 
 
 //assets
-import woman from '../assets/image/womanpic.jpg'
+import mypic from '../assets/image/mypic.jpg'
 import Carousel from "../function/carousel";
 //data
 import HOMEIMAGES from "../data/homeimage";
@@ -37,7 +37,7 @@ export default function Home() {
 
         {/* biodata */}
         <div className={styles.biodataContainer} id="work">
-            <img src={woman} className={styles.biodataimg} />
+            <img src={mypic} className={styles.biodataimg} />
             <h5 className={styles.contentTitle}>Hi, I am Silvia</h5>
             <p className={styles.content}>Self-taught programming languages for HTML, CSS, Javascript and Typescript. I have a high interest in front-end web development and design.
             </p>
