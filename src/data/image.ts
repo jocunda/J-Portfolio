@@ -6,6 +6,8 @@ import earth from '../assets/workimage/earth.jpg'
 import blank from '../assets/backgroundImage/back4.jpg'
 import lemon1 from '../assets/workimage/lemon1.jpg'
 import lemon2 from '../assets/workimage/lemon2.jpg'
+import clock from '../assets/workimage/clock.jpg'
+import clock1 from '../assets/workimage/clock1.jpg'
 
 const WORKIMAGES: WorkImage[] = [
     {
@@ -28,10 +30,10 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 2,
-        image: lemon1,
-        image1: lemon2,
+        image: clock,
+        image1: clock1,
         title: "Clock",
-        text: "Challenge from Frontend Mentor, that using external APIs to set data based om visitor's location and generate random programming quotes.",
+        text: "Challenge from Frontend Mentor, that using external APIs to set data based on visitor's location and generate random programming quotes.",
         framework: "React 18.0.2 CRA",
         link: "https://jocunda.github.io/clock/",
     },
