@@ -12,12 +12,12 @@ import clock1 from '../assets/workimage/clock1.jpg'
 const WORKIMAGES: WorkImage[] = [
     {
         key: 0,
-        image: blank,
+        image: calculator,
         image1: "",
         title: "Calculator",
-        text: "Bla bla bla bla bla",
-        framework: "React 17.0.2 CRA",
-        link: "",
+        text: "Basic calculator operation with theme changer.",
+        framework: "React 18.2.0 CRA",
+        link: "https://jocunda.github.io/calculator/",
     },
     {
         key: 1,
@@ -39,15 +39,6 @@ const WORKIMAGES: WorkImage[] = [
     },
     {
         key: 3,
-        image: calculator,
-        image1: "",
-        title: "Calculator",
-        text: "Basic calculator operation with theme changer.",
-        framework: "React 18.2.0 CRA",
-        link: "https://jocunda.github.io/calculator/",
-    },
-    {
-        key: 4,
         image: price,
         image1: price1,
         title: "Price Grid Component",
@@ -56,13 +47,22 @@ const WORKIMAGES: WorkImage[] = [
         link: "https://github.com/jocunda/FM-price_grid",
     },
     {
-        key: 5,
+        key: 4,
         image: earth,
         image1: "",
         title: "3D Earth",
         text: "Web 3D project that using library such as react-three/drei, react-three/fiber. Simulate earth's orbiting the sun in star galaxy, which surface will have dark and bright side. This earth 3D can controlled by zoom and rotate option. Surface material use some properties with metalness and roughness to make it realistic. Cloudy map also set as upper layer to wrap earth surface with cloud.",
         framework: "React 17.0.2 CRA",
         link: "https://jocunda.github.io/React-Globe/",
+    },
+    {
+        key: 5,
+        image: blank,
+        image1: "",
+        title: "My Portfolio2",
+        text: "Bla bla bla bla bla",
+        framework: "React 17.0.2 CRA",
+        link: "",
     },
     {
         key: 6,
